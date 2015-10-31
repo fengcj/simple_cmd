@@ -1,0 +1,9 @@
+<%
+text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Ipsa sequi cupiditate qui impedit omnis blanditiis natus,\n\n quisquam ex ipsam praesentium! Ut facilis, quos minima,\n\n culpa veniam dolor quia labore libero!"
+%>
+
+<h2>word_wrap</h2>
+<%= word_wrap(text, :line_width => 15) %>
+
+<h2>simple_format</h2>
+<%= simple_format(text)%>

@@ -1,0 +1,41 @@
+<h1>Demo#hello</h1>
+<p>Hello World</p>
+
+
+<p>for erb:</p>
+<% target = "from Erb" %>
+<%= "Hello #{target}"%>
+<br>
+<% 3.times do %>
+  <%= "xxx" %>
+<% end %>
+
+<p>for instanct variable:</p>
+<% @array.each do |n|%>
+  <%= n %> <br>
+<% end %>
+
+
+<p>for @params:</p>
+ID:<%= params[:id]%> <br>
+ID:<%= @id%> <br>
+
+
+Page:<%= params[:page]%> <br>
+Page:<%= @page%> <br>
+Next Page:<%= @page + 1 %> <br>
+
+<hr>
+
+<%= params.inspect%>
+
+
+
+
+
+
+
+
+
+
+
